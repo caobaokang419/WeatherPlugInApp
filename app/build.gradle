@@ -26,6 +26,19 @@ android {
             path "CMakeLists.txt"
         }
     }
+
+    sourceSets {
+        main {
+            //jniLibs.srcDirs = ['libs']
+            //manifest.srcFile 'AndroidManifest.xml'
+            //java.srcDirs = ['src']
+            //resources.srcDirs = ['src']
+            //aidl.srcDirs = ['src']
+            //renderscript.srcDirs = ['src']
+            res.srcDirs = ['src/main/res', 'src/main/res/anim'] //['res']
+            assets.srcDirs = ['src/main/assets/']
+        }
+    }
 }
 
 dependencies {
